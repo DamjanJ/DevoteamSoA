@@ -1,3 +1,737 @@
 <resources>
     <string name="app_name">SoA Wizard</string>
+    <string-array name="QuestionsBig">
+        <item>QUESTION: 1\nWhich two statements are true about composite applications and mediators?</item>
+        <item>QUESTION: 2\nWhat does the Oracle B2B component do for an end-to-end EDI transaction?</item>
+        <item>QUESTION: 3\nYou have developed a BPEL process with a Switch activity using the BPEL 1.1 specification. As part of the upgrade to SOA 12c, you are redesigning the BPEL process to use the BPEL 2.0 specification. Identify the right approach.</item>
+        <item>QUESTION: 4\nYou want to monitor a specific BPEL process variable in your process. You have all the capabilities of Oracle SOA Suite at your disposal. Which approach do you take if you want the variable data written to a JMS queue to be processed by another application?</item>
+        <item>QUESTION: 5\nA company wants to use Oracle SOA Suite to support a zero message loss system. Which three Oracle Adapters can the company use? </item>
+        <item>QUESTION: 6\nWhich statement is true about the relationship between the WSDL and the JCA binding file when working with an Oracle Adapter at design time?</item>
+        <item>QUESTION: 7\nWhich three design considerations apply to an IF-THEN rule?</item>
+        <item>QUESTION: 8\nYou expand a business rule component that a colleague added to the BPEL process. You see an Assign element named Facts_To_Rule_Service. Which statement is true about this Assign element?</item>
+        <item>QUESTION: 9\nIdentify four situations in which you can configure a notification for a human task.</item>
+        <item>QUESTION: 10\nWhich two statements are true about working with tasks in Business Process Workspace?</item>
+        <item>QUESTION: 11\nTo avoid the purchase of new server capacity, a company must limit the volume of messages routed to a computationally expensive RESTful service operation. Which Oracle SOA Suite component can help the company meet the requirement?</item>
+        <item>QUESTION: 12\nWhich three security schemes are supported by Oracle Service Bus (OSB)?</item>
+        <item>QUESTION: 13\nYou defined an event. You now want to trigger that event from an existing Mediator component. How do you link the event to the Mediator so that the Mediator can raise the event to the Event Delivery Network (EDN)?</item>
+        <item>QUESTION: 14\nWhich Oracle Event Processing (OEP) data cartridge should you use to track the GPS location of busses and generate alerts when a bus arrives at its predetermined bus stop positions?</item>
+        <item>QUESTION: 15\nWhich two business indicators should be created to support a chart titled "Sales Total by Region"?</item>
+        <item>QUESTION: 16\nWhich two statements are true about standard dashboards?</item>
+        <item>QUESTION: 17\nWhich statement correctly describes the role of an Oracle Web Services Manager agent?</item>
+        <item>QUESTION: 18\nWhen more than one policy is attached to a policy subject, the combination of policies needs to be valid.</item>
+        <item>QUESTION: 19\nAs an Oracle SOA Suite composite moves through the software development life cycle, certain environment-specific changes must be made to the composite configuration from deployment to deployment. Which feature can help you capture and effect these changes?</item>
+        <item>QUESTION: 20\nWhich statement accurately describes deploying your SOA application to a cluster?</item>
+        <item>QUESTION: 21\nTo support the deployment of a new provisioning system, a company wants to install and configure a production domain with Oracle SOA Suite and Oracle Service Bus. Which statement is true about the required effort?</item>
+        <item>QUESTION: 22\nAfter you install the OEP product, which action is required to install and configure an OEP domain?</item>
+        <item>QUESTION: 23\nWhich two statements are true about the defined Oracle JMS Adapter outbound connection?</item>
+        <item>QUESTION: 24\nFor each enrollment request message, a health insurance carriers web service always returns a response message acknowledgement the receipt of the enrollment request. If there are problems fulfilling the requested enrollment, the web service may respond at a later time with an additional response message detailing why the enrollment could not be fulfilled.\nWhich Oracle SOA Suite service component should be used to implement this integration pattern?</item>
+        <item>QUESTION: 25\nThe identity context is opaque to your web service client and web service and you dont need to perform any additional coding or processing in your client or service to support it after you enable identity context propagation.\nWhich Oracle SOA Suite component directly enables this behavior?</item>
+        <item>QUESTION: 26\nYou have modeled a composite with an inbound adapter service wired to a BPEL process component.
+Which method do you use to model a rejection handler for the inbound adapter service?
+</item>
+        <item>QUESTION: 27*\nWhich two statements are correct about the Oracle Enterprise Scheduler Service (ESS) facility?
+</item>
+        <item>QUESTION: 28\nWhat two architectural factors most heavily influence the interoperability of the Oracle Adapters with Oracle Service Bus (OSB) and Oracle SOA Suite?
+</item>
+        <item>QUESTION: 29\n
+Oracle SOA Suite is being used to virtualize service calls to a third-party human resources provider. The planned service payloads will require minimum transformation. Routing is simple because service calls will be mapped one-for-one to existing third-party services.
+Which two components should be used to handle this service virtualization?
+</item>
+        <item>QUESTION: 30\n
+Which two are available as conditions for an alert rule in BAM 12c?
+</item>
+        <item>QUESTION: 31\n
+Oracle Adapters are deployed to the Oracle SOA Suite server. Which three SOA Suite components can use Oracle Adapters?
+</item>
+        <item>QUESTION: 32\n
+In a BPEL model, what is the quickest way to implement a capability to skip rule execution if a particular condition holds?
+A. Model a switch activity to conditionally execute the business rule component.
+</item>
+        <item>QUESTION: 33\n
+Which tool would you use to enable more detailed logging of SOA components?
+</item>
+        <item>QUESTION: 34\n
+Which expiration and escalation setting can be used to route a task a specified number of levels up a management chain if the assignee does not respond in a given time period?
+</item>
+        <item>QUESTION: 35\n
+How are task outcomes processed in BPEL process?
+</item>
+        <item>QUESTION: 36\n
+You have modelled a Composite X for which the following fault policy action has been configured for remote faults:\n
+            \t&lt;Action id="ora-retry"&gt;\n
+      \t\t&lt;retry&gt;
+         &lt;retryCount>2&lt;/retryCount&gt;
+         &lt;retryIntrval>2&lt;/retryIntrval&gt;
+         &lt;exponentialBackoff/&gt;
+      &lt;/retry&gt;
+   &lt;/Action&gt;
+At runtime, when a remote fault occurs on at outbound invoke, this ora-retry action is triggered. After the two configured retries are exhausted, which one occurs?
+</item>
+        <item>Q37</item>
+        <item>Q38</item>
+        <item>QUESTION: 39\n
+You want to configure Oracle SOA Suite for Maximum Availability Architecture (MAA). Which two activities must be completed?
+</item>
+        <item>QUESTION: 40\n
+Identify two correct statements about Oracle Event Processing (OEP).
+</item>
+        <item>QUESTION: 41\n
+Which statement is true about the skip condition in a BPEL activity?
+</item>
+        <item>QUESTION: 42\n
+Which two statements are true about stake holders working with Business Process Workspace?
+</item>
+        <item>QUESTION: 43\n
+EPN is the internal structure of an OEP application and is displayed as a top-down hierarchy in a graphical editor.
+Which two statements are correct about the Event Processing Network (EPN) in Oracle Event Processing (OEP)?
+</item>
+        <item>QUESTION: 44\n
+When you create an assert in a test case, you can specify a Compare By rule of xml-identical or xml-similar. The rule designates the strictness of the comparison. If you choose xml-similar, identify two conditions that will cause the comparison to fall.
+</item>
+        <item>QUESTION: 45\n
+Your company has a check Credit service used in the sales process and your organization plans to roll out a new sales mobile application. Identify two approaches that you can use to develop the new mobile application.
+</item>
+        <item>QUESTION: 46\n
+Which two statements are correct about cluster support for Oracle SOA Suite 12c applications?
+</item>
+        <item>QUESTION: 47\n
+Which two are correct statements about the Oracle Cloud Adapter for Salesforce.com?
+</item>
+        <item>QUESTION: 48\n
+</item>
+        <item>QUESTION: 49\n
+Which two statements accurately describe policy attachment in Oracle Web Services Manager (OWSM)?
+</item>
+        <item>QUESTION: 50\n
+Identify three true statements about the use of composite sensors.
+</item>
+        <item>QUESTION: 51*\n
+Which statement accurately describes how to use SOA Suite to create a REST interface for a provider application that does not support REST?</item>
+        <item>QUESTION: 52\n
+Which two statements are true about Complex Event Processing (CEP)?
+</item>
+        <item>QUESTION: 53\n
+Which two statements are true about the role of a Continuous Query Language (CQL) processor in a Oracle Event Processing application?
+</item>
+        <item>QUESTION: 54\n
+Which statement is false about debugging SOA composites?
+</item>
+        <item>QUESTION: 55\n
+Which statement accurately describes event-driven architecture?
+</item>
+        <item>QUESTION: 56*\n
+Which statement is correct about how if-then rules are processed during an inferencing session?
+</item>
+        <item>QUESTION: 57\n
+Which dashboard should you use to gauge the overall efficiency of a user for a specific process?
+</item>
+        <item>QUESTION: 58\n
+Which challenge presented by heterogeneous IT architectures does the Oracle Service Bus transport abstraction comprehensively address?
+</item>
+        <item>QUESTION: 59*\n
+Which three are proper applications of Oracle Service Bus?
+</item>
+        <item>QUESTION: 60*\n
+Which statement is true about Oracle Service Bus support for service virtualization?
+</item>
+        <item>QUESTION: 61\n
+You are planning to upgrade a SOA suite production environment from 11g to 12c and are evaluating the required steps in the upgrade process. Identify the two statements that accurately describe that process.
+</item>
+        <item>QUESTION: 62\n
+You are about to upgrade an environment from SOA Suite 11g to SOA Suite 12c and you want to make sure that you meet the prerequisites for the upgrade process.
+Which two options are prerequisites?
+</item>
+        <item>QUESTION: 63\n
+Which statement is false about Oracle Business Activity Monitoring (Oracle BAM)?
+</item>
+        <item>QUESTION: 64*\n
+Which statement is true about if-then rule within a ruleset?
+</item>
+        <item>QUESTION: 65\n
+Identify two reasons why Oracle Cloud Adapters make it easier to integrate a SOA Suite application with a cloud-based application.
+</item>
+        <item>QUESTION: 66*\n
+Your company wants to extend a number of in-house applications with the third-party service functionality.
+Identify two ways in which this can be accomplished using Oracle SOA Suite.
+</item>
+        <item>QUESTION: 67*\n
+To support invocation of a SOAP web service from BPEL, you import the WSDL of the web service into your SOA project. The local WSDL copy contains no partner link types. You create a partner link for the web service in the BPEL designer.
+How does JDeveloper ensure the request partner link types are provided?
+</item>
+        <item>QUESTION: 68\n
+Which two statements accurately describe the invoking of a human task?
+</item>
+        <item>QUESTION: 69*\n
+For a particular asynchronous interaction, Oracle SOA Suite hosts two BPEL processes. One BPEL process acts as the client and the other acts as the service.
+Between the two BPEL processes, what is the smallest number of invoke activities that must be defined?
+</item>
+        <item>QUESTION: 70*\n
+You have a situation where a collection of rules might provide a flexible way of externalizing logic in an application.
+Which two are accurate considerations to assess when you decide to use a decision table or if- then rules?
+</item>
+        <item>QUESTION: 71\n
+Which two are features of Event Delivery Network (EDN)?
+</item>
+        <item>QUESTION: 72\n
+Which statement is true about how BPEL Process Manager handles the For Each activity?
+</item>
+        <item>QUESTION: 73\n
+For each three items can you create tests by using the Service Component Architecture (SCA) test framework?
+</item>
+        <item>QUESTION: 74\n
+BPEL processes are being used to implement both the service and client sides of a synchronous web service interaction.
+Which statement is true?
+</item>
+        <item>QUESTION: 75*\n
+Which two are objectives that you can achieve by using business rules to direct human workflow?
+</item>
+        <item>QUESTION: 76\n
+Which two are valid use cases for a business service?
+</item>
+        <item>QUESTION: 77\n
+Which two statements accurately describe how Oracle Web Services Manager works?
+</item>
+        <item>QUESTION: 78\n
+Identify two statements that correctly describe OWSM policy attachments in Oracle SOA Suite
+</item>
+        <item>QUESTION: 79\n
+Results catching has been configured on a business service. A previously cached result has been flushed from the cache.
+Which two events may have occurred?
+</item>
+        <item>Q80</item>
+        <item>QUESTION: 81\n
+After a successful web application login, an Oracle Access Manager (OAM) token is made available to Oracle WebLogic Server (WLS) where the token is asserted for authentication purposes. The resulting Java Authentication and Authorization Service (JAAS) subject is then made available to the Oracle Web Service Manager (OWSM) agent where it is used to create a Security Assertion Markup Language (SAML).
+Which security feature does this scenario illustrate?
+</item>
+        <item>QUESTION: 82*\nWhich three statements are true about the Oracle Enterprise Scheduler Service (ESS) facility?</item>
+        <item>QUESTION: 83\nYou pass some data from a process variable as a parameter into a human task. At a later time, the variable is then updated in a parallel stream of execution in the BPEL process while the human task is still executing before it is actioned by the assignee.
+What does the assignee see after opening the task in the workspace and looking at the parameter?</item>
+        <item>Q84</item>
+        <item>QUESTION: 85\nA company wishes to create a gateway proxy to provide WS-Security authentification for all inbound request. After successful implementation of that proxy, we have to route request to backend. How?</item>
+        <item>QUESTION: 86\nYou want to include documentation in the BPEL source code for business rule that you are adding to your BPEL model. How would you enter this documentation?</item>
+        <item>QUESTION: 87\nWhich technologies provide zero loss message system with EJB, JMS and DB Adapters?</item>
+        <item>QUESTION: 88\nYour solution needs to validate, transform, and route data. You want to deploy the capability as a Service Component Architecture(SCA) composite application. You would most likely use a ________ to provide the functionality.</item>
+        <item>QUESTION: 89\nIntegration Debugging is available for which two components?</item>
+        <item>DEVELOPMENT\nIF YOU SEE THIS CALL DAMJAN</item>
+        <item>DEVELOPMENT\nIF YOU SEE THIS CALL DAMJAN</item>
+        <item>DEVELOPMENT\nIF YOU SEE THIS CALL DAMJAN</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+
+
+
+
+
+    <string-array name="CorrectAnswersBig">
+        <item>1,3</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>0,1,2</item>
+        <!-- 5 -->
+        <item>2</item>
+        <item>0,1,2</item>
+        <item>0</item>
+        <item>1,3,4,5</item>
+        <item>0,3</item>
+        <!-- 10 -->
+        <item>3</item>
+        <item>0,2,4</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0,3</item>
+        <!-- 15 -->
+        <item>2,3</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>3</item>
+        <!-- 20 -->
+        <item>3</item>
+        <item>2</item>
+        <item>0,1</item>
+        <item>0</item>
+        <item>0</item>
+        <!-- 25 -->
+        <item>3</item>
+        <item>0,3</item>
+        <item>0,2</item>
+        <item>1,3</item>
+        <item>0,2</item>
+        <!-- 30 -->
+        <item>0,1,2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
+        <!-- 35 -->
+        <item>1</item>
+        <item>1,2</item>
+        <item>4</item>
+        <item>0,3</item>
+        <item>0,2</item>
+        <!-- 40 -->
+        <item>2</item>
+        <item>1,2</item>
+        <item>2,3</item>
+        <item>2,3</item>
+        <item>1,3</item>
+        <!-- 45 -->
+        <item>2,4</item>
+        <item>2,3</item>
+        <item>2</item>
+        <item>0,3</item>
+        <item>0,1,3</item>
+        <!-- 50 -->
+        <item>2</item>
+        <item>1,2</item>
+        <item>0,2</item>
+        <item>0</item>
+        <item>3</item>
+        <!-- 55 -->
+        <item>0</item>
+        <item>2</item>
+        <item>2</item>
+        <item>0,2,3</item>
+        <item>0</item>
+        <!-- 60 -->
+        <item>1,3</item>
+        <item>0,2</item>
+        <item>2</item>
+        <item>0</item>
+        <item>0,3</item>
+        <!-- 65 -->
+        <item>0,3</item>
+        <item>0</item>
+        <item>0,2</item>
+        <item>1</item>
+        <item>0,4</item>
+        <!-- 70 -->
+        <item>1,2</item>
+        <item>3</item>
+        <item>0,1,2</item>
+        <item>3</item>
+        <item>1,2</item>
+        <!-- 75 -->
+        <item>2,3</item>
+        <item>0,1</item>
+        <item>2,3</item>
+        <item>0,1</item>
+        <item>1,3</item>
+        <!-- 80 -->
+        <item>0</item>
+        <item>0,1,3</item>
+        <item>0</item>
+        <item>0,3</item>
+        <item>1</item>
+        <!-- 85 -->
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>0,2</item>
+        <item>0</item>
+        <!-- 90 -->
+        <item>0,2</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </string-array>
+
+
+    <string-array name="AnswersBig">
+        <item>A. A composite application decouples the interface from business logic.:B. A composite application exposes a process as a web service.:C. A mediator exposes a process as a web service.:D. A mediator decouples the interface from business logic in a composite application.</item>
+        <item>A. EDI translation, validation, and transformation:B. only EDI translation and validation, but not transformation:C. only transformation, but not translation or validation:D. defines EDI documents, but does not do translation, validation, or transformation</item>
+        <item>A. Replace the Switch activity with a While activity.:B. Replace the Switch activity with an If activity.:C. Replace the Switch activity with a Repeat Until activity.:D. Replace the Switch activity with a For Each activity.</item>
+        <item>A. Identify the variable as a key performance indicator (KPI) and track it in BAM.:B. Use a composite sensor on the appropriate service or reference binding.:C. Use a BPEL Process Manager sensor to collect the value and context.:D. Use Oracle Event Processing (OEP) to monitor the activities being executed in the BPEL process.</item>
+        <item>A. JMS Adapter:B. Database Adapter:C. EJB Adapter:D. File/FTP Adapter:E. Socket Adapter</item>
+        <!-- 5 -->
+        <item>A. The WSDL references the appropriate JCA binding file for each applicable operation in the WSDL "binding" element.:B. All operations defined in the WSDL must be mapped to activation specifications in the JCA binding file.:C. The JCA binding file defines default adapter property values for each applicable operation defined in the WSDL.:D. There is no direct relationship between the WSDL and the JCA binding file at design time.</item>
+        <item>A. A rule function can be called.:B. Aggregations such as count, max, and average can be used.:C. A while loop can be employed.:D. Fact object structures can be changed.:E. A BPEL scope variable can be defined.</item>
+        <item>A. It was added automatically based on entries that your colleague made in the dialog box that appeared when the business rule component was added to the BPEL model.:B. Your colleague manually added this Assign element after adding the business rule component to the BPEL model.:C. This Assign element was automatically added when your colleague manually added the corresponding Rule_Service_To_Facts Assign to the BPEL model.:D. You can delete this Assign because it was created for documentation purposes only.</item>
+        <item>A. task created:B. task completed:C. task opened in workspace:D. task errored:E. outcome updated:F. task assigned</item>
+        <item>A. A user can create personal to-do tasks that are unassociated with a process instance.:B. Delegating a task means to transfer the task to another user or group.:C. You can see how long each completed step has taken to finish.:D. You can display the process model and view the path a process instance has taken.</item>
+        <!-- 10 -->
+        <item>A. BPEL Process:B. Mediator:C. Proxy Service:D. Business Service</item>
+        <item>A. partial encryption of a request as defined by a custom WS-Security policy:B. partial encryption of a request as defined by an OWSM policy:C. authentication of a request as defined by an OWSM policy:D. propagation of a Security Assertion Markup Language (SAML) token from a WebCenter portal to an OSB proxy service:E. propagation of a SAML token from a WebCenter portal to the OSB console</item>
+        <item>A. Use the SOA Composite Editor to specify the event as a property on the incoming wire into the Mediator component.:B. Use a text editor to modify the .edl file that defines the event so that the Meditator is identified as a publisher.:C. Use the SOA Composite Editor to add a raise action to the Mediators .mplan specification file.:D. Use Enterprise Manager to associate the Mediator with the appropriate event.</item>
+        <item>A. JDBC Data:B. Oracle Spatial:C. Hadoop Big Data:D. NoSQLDB Big Data:E. Java Data</item>
+        <item>A. Measure:B. Counter:C. Counter mark:D. Dimension</item>
+        <!-- 15 -->
+        <item>A. Workload dashboards report on completed instances.:B. Performance dashboards report on in-flight instances.:C. By default, there is a 30-minute delay for workload data to be reflected in standard dashboards.:D. By default, data never ages out of the process analytics database because it is not periodically purged.</item>
+        <item>A. It serves as a Policy Definition Point (PDP).:B. It serves as a Policy Enforcement Point (PEP).:C. It serves as both a PDP and a PEP.:D. It is neither a PDP nor a PEP.</item>
+        <item>A. Only one MTOM policy can be attached to a policy subject.:B. More than one Reliable Messaging policy can be attached to a policy subject.:C. You cannot have both a Reliable Messaging policy and a WS Addressing policy attached to the same policy subject.:D. Only one security policy can be attached to a policy subject.</item>
+        <item>A. Configuration Plans:B. Deployment Plans:C. Domain Value Maps:D. Property Files</item>
+        <item>A. Manually deploy the application to each managed server in the cluster.:B. After deployment, restart each managed server in the cluster before the application is available for service.:C. Use WebLogic Server Administration Console for deployment because you cannot deploy to a cluster from JDeveloper.:D. Treat your cluster as a single deployment target and let the administration server automatically deploy the application to all the managed servers in the cluster.</item>
+        <!-- 20 -->
+        <item>A. Separate domains must be configured for Oracle SOA Suite and Oracle Service Bus.:B. The Oracle Repository Creation Utility (RCU) must be run twice to create the required schemas.:C. The installation of Oracle SOA Suite includes the installation of Oracle Service Bus.:D. A supported version of WebLogic Server must be installed before installing Oracle SOA Suite.</item>
+        <item>A. Configure the OEP port through the OEP console.:B. Configure the JDBC settings in the config.xml file.:C. Create an OEP domain with the Configuration Wizard.:D. Start the OEP server and enter the administrator credentials when prompted.</item>
+        <item>A. It supports connections to JMS distributed queues.:B. It uses default credentials when connecting to the remote JMS provider.:C. It supports zero message loss via distributed transactions.:D. It requires the JMS consumer to explicitly commit transactions.</item>
+        <item>A. BPEL Process:B. Mediator:C. Business Rule:D. Human Workflow</item>
+        <item>A. Oracle Web Service Manager Policy Manager:B. Oracle BPEL Process Manager:C. Oracle Enterprise Manager:D. Oracle User Messaging Service</item>
+        <!-- 25 -->
+        <item>A. Define the rejection-handler logic in rejection-handlers.xml in the $FMW_HOME/soa/connectorsdirectory
+:B. Define the rejection-handler logic inline as a child element of the section of the inbound adapter in composite.xml.
+:C. Define the rejection-handler logic in a top-level catch block in the BPEL process where the QName of the fault should be bpws;rejectedMessages.
+:D. Define the rejection-handler logic in fault-policies.xml for the composite, and then associate the fault-policies.xml with the composite.
+</item>
+        <item>A. It is a Java EE application that is deployed to WebLogic Server to provide distributed job request processing across a single WebLogic Server or a collection of WebLogic Servers.
+:B. It is shipped as a separate product and you can install it after you have completed the SOA Suite installation.
+:C. It is used extensively by Fusion Applications so it is well-tested.
+:D. It is administered via the WebLogic Server Administration Console.
+</item>
+        <item>A. Oracle Adapters are based on the Java EE Connector Architecture (JCA) 1.5 specification.
+:B. Oracle Adapters use native APIs to connect to the supported back end applications.
+:C. Oracle Adapters are deployed to the same Oracle WebLogic Servers as Oracle Fusion Middleware.
+:D. Use of Oracle Adapters Extended Architecture (XA) features is completely optional.
+</item>
+        <item>A. BPEL Process
+:B. Proxy Service
+:C. Mediator
+:D. Business Service
+</item>
+        <item>A. between two times
+:B. when rows are deleted from a data object
+:C. a particular day of the week
+:D. when a web service is invoked
+</item>
+        <!-- 30 -->
+        <item>A. BPEL Process
+:B. Mediator
+:C. Proxy Service
+:D. Human Workflow
+:E. Business Rule
+</item>
+        <item>A. Model a switch activity to conditionally execute the business rule component.
+:B. Use a skip condition on the business rule component.
+:C. Include an XPath expression in an annotation on the business rule component.
+:D. Use a correlation set on the business rule component.
+</item>
+        <item>A. WebLogic Console
+:B. Enterprise Manager
+:C. BPM Workspace
+:D. WebLogic Diagnostics Framework (WLDF)
+</item>
+        <item>A. Never expire
+:B. Expire after
+:C. Route to manager
+:D. Renew after
+:E. Escalate after
+:F. Management chain
+</item>
+        <item>A. by using a condition (present in each path of the human task activity) in which you specify the outcome that causes a particular path to be followed
+:B. by using onMessage or pick activities that receive the outcome from the human workflow engine
+:C. with a Switch containing a case for each outcome of interest plus an optional otherwise case after the human task activity
+:D. with a Switch containing one case for each possible outcome after the human task activity
+</item>
+        <!-- 35 -->
+        <item>A. The transaction of Composite X rolls back.
+:B. The instance is marked "open.faulted" and is available for auto-recovery.
+:C. The instance is marked "closed.faulted" and is available for error recovery from Enterprise Manager where the user can choose actions on the instance such as replay, rethrow, and abort.
+:D. The default retryFailureAction is initiated and it rethrows the error back to the caller service.
+</item>
+        <item>A. The actual source directory will be specified by a property in the composite.xml file.
+:B. Each file read will be moved to an archive directory after it is successfully processed.
+:C. This configuration can be used to create an outbound business service component.
+:D. This configuration can be used to create an inbound proxy service component.
+</item>
+        <item>A. The invocation is retried for a total of two times every two seconds. Fault policy reties are ignored.
+:B. The invocation is retried for a total of six times every three seconds.
+:C. The invocation is retried for a total of six times every two seconds.
+:D. The fault policy retries occur within the JCA retries. So, two JCA retries are executed two seconds apart. Within each fault policy retry, two JCA retries are executed two seconds apart.
+:E. The JCA retries occur within the fault policy retries. So, three fault policy retries are executed three seconds apart. Within each fault policy retry, two JCA retries are executed two seconds apart.
+</item>
+        <item>A. Add managed servers to the domain configuration to support the Oracle SOA Suite cluster.
+:B. Run the Configuration Wizard on each server that will host Oracle SOA Suite managed servers.
+:C. Rework the Oracle SOA Suite domain configuration to use appropriate GridLink or multiple data sources.
+:D. Manually retarget the Oracle SOA Suite deployments to the newly created cluster.
+</item>
+        <item>A. It is a platform to develop and execute applications that process streaming data.
+:B. It is designed to connect businesses using standards-based event communication protocols.
+:C. It is a powerful CQL engine that performs filtering, aggregations, calculations, and pattern matching in near real time.
+:D. It is an implementation of the Service Component Architecture (SCA) to process streaming data using regular expressions.
+</item>
+        <!-- 40 -->
+        <item>A. The activity gets executed then the skip condition expression evaluates to True.
+:B. The skip condition expression is evaluated before the activity instance is created.
+:C. The activity gets executed when the skip condition expression evaluates to False.
+:D. The activity gets executed when the skip condition expression throws a fault.
+</item>
+        <item>A. Process owners manage rules for users and groups.
+:B. Process owners can act on tasks belonging to their process, but are assigned to other users.
+:C. Process participants can delegate work to another user.
+:D. Administrators typically get involved to handle task escalations.
+</item>
+        <item>A. EPN is the internal structure of an OEP application and is displayed as a top-down hierarchy in a graphical editor.
+:B. EPN defines an OEP application and is built using the EPN Editor in JDeveloper.
+:C. EPN is an interconnection of adapters, channels, event beans, and CQL processors that make up an OEP application.
+:D. EPN is a part of the Event Delivery Network (EDN) facility that supports event-driven architecture for SOA Suite.
+:E. Every event that arrives at the OEP server creates a new instance of an EPN.
+</item>
+        <item>A. The namespaces are the same, but the namespace prefix is different.
+:B. An element has the same child attributes, but they are in a different order.
+:C. An element has a different name, but the same child attributes are in the same order.
+:D. The namespaces are different, but the namespace prefix is the same.
+</item>
+        <item>A. Develop a template for the checkCredit service.
+:B. Expose the checkCredit service with a REST interface.
+:C. Create a BPEL sub process for the mobile application request.
+:D. Use JSON for payload.
+</item>
+        <!-- 45 -->
+        <item>A. A cluster appears to clients as multiple WebLogic Server instances.
+:B. The server instances in a cluster must all run on the same machine.
+:C. You can scale a cluster by adding machines to the cluster to host additional server instances.
+:D. Server instances in a cluster can run different versions of WebLogic Server.
+:E. You can create a cluster by using WLST, the WebLogic Server Administration Console, or Enterprise Manager Fusion Middleware Control.
+:F. For management purposes, you can split a cluster across multiple domain.
+</item>
+        <item>A. It uses either HTTP basic authentication or username token authentication to perform secure interaction with Salesforce.com.
+:B. It can make both synchronous and asynchronous calls through the Salesforce.com SOAP API.
+:C. Behind the scenes, it uses the SOAP API provided by Salesforce.com.
+:D. The design-time tooling generates a WSDL that is different from the enterprise WSDL available from Salesforce.com.
+</item>
+        <item>A. The user is running on a four-node SOA cluster and has not configured the inbound JMC adapter to be a singleton.
+:B. The user is running on a single-node SOA environment but has configured the number of inbound adapter threads to be a value greater than 1.
+:C. The given Mediator configuration does not address this sequencing requirement.
+:D. The user has configured resequencer worker threads to a value greater than 1 for the Mediator service engine.
+</item>
+        <item>A. The order in which policies are attached to a subject determines the order in which the policies are executed.
+:B. JDeveloper groups the policies that can be attached into five categories of interceptors.
+:C. Multiple WS-Addressing policies can be attached to a policy subject.
+:D. In Enterprise Manager Fusion Middleware Control, a security policy can be attached to a web service and it can be either enabled or disabled.
+</item>
+        <item>A. They enable the monitoring and publishing of incoming and outgoing messages.
+:B. XPath expressions can be used as a filter to track a particular type of message.
+:C. You can choose to view the runtime output of the composite sensor in a database table.
+:D. The output of a composite sensor can be directed to Oracle Business Activity Monitoring.
+:E. They publish their output to the WebLogic Administration Console.
+</item>
+        <!-- 50 -->
+        <item>A. Oracle Service Bus must be used. An HTTP proxy service is created and a pipeline is added with a conditional branch for each HTTP verb that the interface will serve. If there is any non-XML payload, such as JSON, an external parser service must be used to translate it to XML.
+:B. Use Oracle Service Bus or BPEL Process Manager and utilize the REST binding that is available for both. The REST binding will automatically translate a REST payload from JSON or XML to SOAP/XML for processing in the middleware layer.
+:C. Use a BPEL process with a REST binding and utilize the nXSD activity to translate the native JSON payload to XML for processing.
+:D. Use the HTTP transport in Oracle Service Bus for the REST interaction and use nXSD to translate the JSON payload to XML for processing.
+</item>
+        <item>A. It is a method to achieve the best outcome in a model where data is already stored in a relational database.
+:B. It is a technique used for querying data prior to it being stored within a database or without it ever being stored.
+:C. It is a highly efficient method of analysing and processing streams of data.
+:D. It is a technique for rapidly storing large amounts of unstructured data.
+:E. It executes extremely complex queries against a database using a new query language.
+</item>
+        <item>A. It primarily executes SQL statements against the database.
+:B. It can be used to filter, aggregate, and correlate events in memory and can integrate with Coherence, NoSQL, and HDFS.
+:C. It invokes human workflows to deal with exception handing.
+:D. It can perform spatial queries as well as complex
+</item>
+        <item>A. You can run the debugger in Oracle Enterprise Manager Fusion Middleware Control.
+:B. You can debug on local as well as on remote servers.
+:C. Breakpoints are the intentional pausing locations in a SOA composite application that you set for debugging purposes.
+:D. If the composite is not already deployed in the current JDeveloper session, then JDeveloper will redeploy it.
+</item>
+        <item>A. It is a design approach that fosters creation of distinct pieces of software where each piece is a self-contained unit of functionality.
+:B. It is a programming paradigm that views processing as evaluation of functions without regard for application state.
+:C. it is a style of building software that specifies logic without describing its control flow.
+:D. It is an approach focusing on the production, detection, and consumption of potentially significant state changes.
+</item>
+        <!-- 55 -->
+        <item>A. Rules are evaluated in the order in which they were added to the ruleset.
+:B. A particular rule can be fired only once in an inferencing session.
+:C. The effective date set for a rule can take it out of consideration for evaluation.
+:D. A priority setting of 1 will cause the rule to fire during each inferencing session.
+:E. Rules with multiple IF conditions receive higher priority during evaluation.
+</item>
+        <item>A. workload per process on a standard dashboard
+:B. workload per participant on a standard dashboard
+:C. performance per participant on a standard dashboard
+:D. a custom dashboard
+</item>
+        <item>A. tightly coupled business services integration due to complex and hardwired connections
+:B. difficulty managing deployed services due to disparate protocols and applications involved
+:C. inherent replication of transport, transformation, security and routing details
+:D. exponential redevelopment and redeployment efforts when service endpoint interfaces change
+</item>
+        <item>A. An existing Java web service is made available to clients running transports and protocols not originally planned by the original developers. No modifications to the web service implementation are required.
+:B. A request is transformed and routed to an appropriate service endpoint based on the content of the request message. All complexity of the supporting runtime protocol selection is hidden
+:C. A request for a large graphics job is split into smaller pieces that are processed in parallel by an existing rendering service. After all of the pieces have been processed, the results are joined to create a single response.
+:D. A request containing a complex family tree is validated before being routed to an existing genealogy service. Recursive logic is implemented to validate that all relationships in the tree are consistent.
+:E. A request for a background check is conditionally routed between multiple third-party validation services with different service-level agreements. Remediation must be handled if any one of the validation service calls fails.
+</item>
+        <item>A. It allows flexible control of messages using validation, transformation, and routing based on message content.
+:B. It enables services to be created, managed and orchestrated into composite applications and business processes.
+:C. It provides comprehensive, built-in security based on Oracle Platform Security Services and Oracle WebLogic security framework.
+:D. It supports interoperability with web service integration technologies including .NET, TIBCO EMC, IBM MQ, and Apache Axis.
+</item>
+        <!-- 60 -->
+        <item>A. Composites must be redeployed after the upgrade process.
+:B. It is recommended to-purge as many non essential instances in the dehydration store as possible before the upgrade.
+:C. BAM dashboards and alerts will be migrated automatically.
+:D. Long-running instances will resume after the upgrade process has completed.
+</item>
+        <item>A. The operating system and the JVM must be 64-bit.
+:B. SOA Suite must be at the 11.1.1.5, 11.1.1.6 or 11.1.1.7 patchset levels.
+:C. Oracle Platform Security Services (OPSS) must have been migrated to use the DB or the LDAP-based policy store.
+:D. The SOA server must be a single-node server so that it is not part of a SOA cluster.
+</item>
+        <item>A. Oracle BAM uses the same Oracle Coherence technology for caching and high availability that many WebLogic Server applications utilize.
+:B. Oracle BAM data objects are based on the Star schema and that makes it easier to share data with business intelligence applications.
+:C. If you have remembered to install the Oracle Complex Event Processing Service Engine, Oracle BAM can use it for real-time data analysis.
+:D. Sophisticated ADF components, such as treemaps, scatter charts, and bubble charts, may be easily incorporated into executive dashboards.
+</item>
+        <item>A. It is evaluated in the listed order.
+:B. It can evaluate other rulesets.
+:C. It can modify the result of the rule multiple times.
+:D. It always sets the outcome of the rule.
+</item>
+        <item>A. They shield the developer from needing in-depth expertise on the functionality of the cloud-based application.
+:B. They help the developer master the intricacies of the cloud applications data model and mechanisms for security and session management.
+:C. They come with a configuration wizard that is accessible from Enterprise Manager.
+:D. They free the developer up to focus on building the business logic for related business processes.
+</item>
+        <!-- 65 -->
+        <item>A. by developing BPEL processes that orchestrate a number of third-party service calls to complete a new business activity.
+:B. by developing ADF screen flows that percent unified views of the third-party service functionality to in-house portal users
+:C. by developing RESTful web services that provide logic to enrich third-party service responses 
+:D. by developing mediators that handle last-mile transformation and routing of messages to and from third-party services
+</item>
+        <item>A. It automatically creates a wrapper WSDL to contain partner link types.
+:B. It automatically injects the partner link types into the local WSDL copy.
+:C. It prompts you to add the partner link types to the SOAP web service implementation.
+:D. It prompts you to manually add the partner link types to the local WSDL copy.
+</item>
+        <item>A. A web service client in a different composite can invoke a human task.
+:B. A human task can invoke another human task in the same composite.
+:C. A BPEL process can invoke a human task in a different composite.
+:D. A human task can invoke another human task in a different composite.
+</item>
+        <item>A. 0
+:B. 1
+:C. 2
+:D. 3
+</item>
+        <item>A. The decision tables spreadsheet metaphor is compact and familiar to end users.
+:B. Decision tables can use globals whereas if-then rules cannot.
+:C. The logic will likely require more rules if expressed as a decision table.
+:D. Unlike with a decision table, an Expression Builder is provided for if-then rules to help you craft condition expressions.
+:E. Built-in error prevention features for decision tables can help you build more complete and accurate rules.
+</item>
+        <!-- 70 -->
+        <item>A. JMS-based point-to-point architecture that is based on queues.
+:B. JMS-based publish/subscribe architecture that is based on topics.
+:C. support for Oracle AQ as a provider
+:D. separately installable to allow for flexible deployment
+:E. support for durable subscriptions so that, in order to receive events, the subscriber need not be running
+</item>
+        <item>A. The counter variable of the For Each activity is global, so any change to it in the enclosed scope activity is retained and that change can impact the next iteration.
+:B. The For Each activity executes a contained scope activity N times, where N is the final counter value minus the starting counter value.
+:C. The For Each activity waits for the execution to finish for all the branches specified when the completion condition is specified and evaluated to true.
+:D. The counter variable of a For Each activity is local to the enclosed scope activity, so a change to it outside the scope of the For Each, does not impact the next iteration.
+</item>
+        <item>A. Reference binding components
+:B. Service components such as a Mediator
+:C. Wires
+:D. Invoke activities in a BPEL process
+:E. Composite sensors
+</item>
+        <item>A. When acting as the client, a BPEL process may omit the Invoke activity.
+:B. When acting as the service, a BPEL process may omit the Reply activity.
+:C. When acting as the client, a BPEL process may not invoke as asynchronous process and wait for a callback.
+:D. When acting as the service, a BPEL process may not reply to the client with a well-defined fault message.
+</item>
+        <item>A. Load balance tasks among users based upon server utilization.
+:B. Redirect the process flow as specified in the PBMN model.
+:C. Escalate and reassign a task to the manager of the current assignee.
+:D. Skip all subsequent routing and mark a task as complete.
+</item>
+        <!-- 75 -->
+        <item>A. load balancing XML messages between multiple service endpoints using different transports
+:B. load balancing SOAP messages between multiple service endpoints addressed by different URLs
+:C. load balancing MFL messages between multiple service endpoints based on server load
+:D. routing a Java message to a JMS error queue after three failed load balancing attempts
+</item>
+        <item>A. On the client side, the agent coordinates a pipeline of policy interceptors that apply policy assertions to a request in a standardized, predetermined order.
+:B. On the service side, policy assertions are processed in reverse order of the client side before a request is delivered to the service.
+:C. On the client side, the policy manager coordinates a pipeline of agents that apply policy assertions to the request in the order specified by the developer.
+:D. On the service side, policy assertions are processed in the same order as on the client side before a request is delivered to the service.
+</item>
+        <item>A. Although you can attach as well as detach security policies in JDeveloper, you can only detach them in Enterprise Manager.
+:B. An application developer typically uses JDeveloper to create new security policies rather than select them from a pre built list.
+:C. When you use JDeveloper to associate a security policy with a web service, the policy is not really attached until application deployment.
+:D. OWSM policies can be attached and detached with WLST.
+</item>
+        <item>A. Result catching has been disabled for the business service.
+:B. The WSDL resource for the business service has been updated
+:C. The back-end service referenced by the endpoint URI has become unavailable.
+:D. The back-end service has returned a different response for the cache key.
+</item>
+        <item>A. bookstore/book/author
+:B. bookstore/book/author/text ()
+:C. bookstore/book/author/*
+:D. bookstore//author/text ()
+:E. //author/@text
+:F. //author/*text
+</item>
+        <!-- 80 -->
+        <item>A. identity propagation
+:B. single sign-on
+:C. user authorization
+:D. non-repudiation
+</item>
+        <item>A. An ESS job request processor is responsible for allocating threads for job requests.
+:B. An ESS job request dispatcher polls for job requests and invoked jobs.
+:C. A WebLogic cluster must be established because ESS cannot run on just a single node.
+:D. On the scheduling service home page, you can quickly find a list of the 10 job requests that have been running for the longest period of time.
+:E. ESS is used internally by SOA Suite and you typically dont use it to schedule your own jobs.
+</item>
+        <item>A. The parameter contains the values of the process variable as it was when the task was created.
+:B. The parameter contains the values of the process variable as it is at the current time (that is, when the user opened the human task in the workspace).
+:C. The parameter is empty and the task must be restarted to pick up the new values of the process variable.
+:D. It is not possible to determine what the assignee sees from the information provided.
+</item>
+        <item>A. adding the attribute bpelx :insertMissingToData="yes"to line 2
+:B. adding the attribute bpelx ;insertMissingFromData="yes"to line 2 
+:C. correcting the namespace prefixes in line 5
+:D. correcting the namespace prefixes in line 8
+</item>
+        <item>A. Messaging service
+:B. WSDL web service
+:C. Any SOAP service
+:D. Any XML service
+</item>
+        <!-- 85 -->
+        <item>A. As a comment attribute on the sourrounding scope element
+:B. As an annotation on the business rule component
+:C. As the value for a BPEL global variable
+:D. As user documentation on the business rule component
+</item>
+        <item>A. SOA
+:B. XA
+:C. JCA
+:D. SCA
+</item>
+        <item>A. Proxy service
+:B. Business service
+:C. BPEL service
+:D. Spring Component
+:E. Mediator
+</item>
+        <item>A. Service Bus
+:B. BPEL Process
+:C. SOA composites
+:D. Business Rule</item>
+        <item>A. IF YOU SEE THIS
+:B. CALL DAMJAN</item>
+        <!-- 90 -->
+
+    </string-array>
+
+
+
+
 </resources>

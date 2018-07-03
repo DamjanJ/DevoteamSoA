@@ -57,7 +57,7 @@ public class StartQuizActivity extends AppCompatActivity {
     TextView title;
     ListView QuestionList;
     int TotalPoints = 0;
-    int maxQuestions = 10;
+    int maxQuestions = 89;
     TextView changable;
 
 
@@ -140,7 +140,7 @@ public class StartQuizActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                if (mycounter<24) {
+                if (mycounter<maxQuestions-1) {
                     btn_nextQ.setVisibility(View.INVISIBLE);
                     btn_showQ.setVisibility(View.VISIBLE);
                     QuestionList.setSelected(true);

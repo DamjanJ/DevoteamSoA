@@ -2,10 +2,12 @@ package org.zerocode.soawizard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Damjan on 28-Jun-18.
@@ -18,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     public Button StartQuiz;
     public Button Questions;
     public Button Statistics;
-    public TextView Tekst1;
 
 
     @Override
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(StartQuizInt);
 
 
+
+
             }
         });
 
@@ -61,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 // Damjan Tutorial: If button is visible, it will disappear on click, and vice versa
-                Intent QuestionsInt = new Intent(getApplicationContext(),QuestionsActivity.class);
+                Intent QuestionsInt = new Intent(MainActivity.this,QuestionsActivity.class);
                 startActivity(QuestionsInt);
 
 
@@ -75,12 +78,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
 
-
+                Toast.makeText(getApplicationContext(),"Implementing solution soon - Damjan", Toast.LENGTH_LONG).show();
                 // Damjan Tutorial: If button is visible, it will disappear on click, and vice versa
-                Intent StatisticsInt = new Intent(getApplicationContext(),StatisticsActivity.class);
-                startActivity(StatisticsInt);
-
-
+                /*Intent StatisticsInt = new Intent(getApplicationContext(),StatisticsActivity.class);
+                startActivity(StatisticsInt);*/
             }
         });
 

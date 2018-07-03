@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+    android:gravity="center_vertical"
+    android:paddingTop="10dp"
+    android:checkMarkTint="@color/colorDevoBlueDark"
+    android:textColor="@android:color/tab_indicator_text"
+    android:paddingBottom="10dp"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart" />

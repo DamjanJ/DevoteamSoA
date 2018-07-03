@@ -25,6 +25,18 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity
+        android:name=".QuestionsActivity"
+        android:screenOrientation="portrait"
+        ></activity>
+        <activity
+            android:name=".StartQuizActivity"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity
+            android:name=".StatisticsActivity"
+            android:screenOrientation="portrait"
+            ></activity>
 
     </application>
 
