@@ -71,11 +71,14 @@ public class QuestionsActivity extends AppCompatActivity{
                 NumbPad np = new NumbPad();
                 np.show(QuestionsActivity.this, "Go to question:", NumbPad.NO_DECIMAL,
                         new NumbPad.numbPadInterface() {
+                            Integer tempvalue = mycounter;
                             // This is called when the user click the 'Ok' button on the dialog
                             // value is the captured input from the dialog.
                             public String numPadInputValue(String value) {
-                                mycounter = Integer.valueOf(value)-1;
-                                    if (mycounter>=0 && mycounter <maxQuestions) {
+
+                                tempvalue = Integer.valueOf(value)-1;
+                                    if (tempvalue>=0 && tempvalue <maxQuestions) {
+                                        mycounter = tempvalue;
                                         if(mycounter==0) {
                                             btn_previousQ.setVisibility(View.INVISIBLE);
                                         } else
@@ -200,7 +203,7 @@ public class QuestionsActivity extends AppCompatActivity{
             Answer.setText(AnswersQ[i]);
             for (int m=0;m<CorrectAnswers.length;m++){
                 if (i==Integer.valueOf(CorrectAnswers[m])) {
-                    Answer.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+                    Answer.setTextColor(getResources().getColor(R.color.colorDevoBlueDark));
                 }
             }
             return view;

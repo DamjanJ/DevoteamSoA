@@ -16,7 +16,7 @@
         <!-- Damjan Tutorial: When adding any new Class (activity) you must declare it in the Manifest -->
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
 
 
             <!-- Damjan Tutorial: <intent-filter> tag is only used here to declare DEFAULT START ACTIVITY, you won't need it afterwards -->

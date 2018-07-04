@@ -52,12 +52,12 @@ public class StartQuizActivity extends AppCompatActivity {
     Button btn_showQ;
     Button btn_finishedQ;
     int mycounter = 0;
-    int jumpedFlag = 0;
+    int quizFlag = 0;
     int[] Choice;
     TextView title;
     ListView QuestionList;
     int TotalPoints = 0;
-    int maxQuestions = 89;
+    int maxQuestions = 45;
     TextView changable;
 
 
@@ -68,6 +68,17 @@ public class StartQuizActivity extends AppCompatActivity {
 
 
         setContentView(R.layout.activity_quiz);
+
+        Bundle b = getIntent().getExtras();
+
+        if (b != null){
+            quizFlag = b.getInt("key");
+            if (quizFlag==2){
+                mycounter = 45;
+                maxQuestions = 89;
+            }
+        }
+
 
         // Contains ALL THE QUESTIONS
         QuestionsBigStr = getResources().getStringArray(R.array.QuestionsBig);
@@ -81,7 +92,11 @@ public class StartQuizActivity extends AppCompatActivity {
         btn_showQ = (Button)findViewById(R.id.btn_Show);
         btn_finishedQ = (Button)findViewById(R.id.btn_finished);
         progressq = (ProgressBar)findViewById(R.id.pb_quiz);
-        progressq.setMax(maxQuestions-1);
+        if (quizFlag ==2) {
+            progressq.setMax(maxQuestions - 46);
+        } else {
+            progressq.setMax(maxQuestions - 1);
+        }
 
         title = (TextView)findViewById(R.id.text_questionTitle);
         title.setText(QuestionsBigStr[mycounter]);
@@ -154,7 +169,11 @@ public class StartQuizActivity extends AppCompatActivity {
                     //simple_list_item_multiple_choice
                     QuestionList.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
                     QuestionList.setAdapter(adapter);
-                    progressq.setProgress(mycounter);
+                    if (quizFlag == 2) {
+                        progressq.setProgress(mycounter-45);
+                    } else {
+                        progressq.setProgress(mycounter);
+                    }
                 }
                 else {
                     Toast.makeText(getApplicationContext(),"If you see this, call Damjan",Toast.LENGTH_LONG).show();
@@ -172,17 +191,50 @@ public class StartQuizActivity extends AppCompatActivity {
                 TextView DEfficiency = (TextView)mView.findViewById(R.id.text_efficiency);
                 TextView DPoints = (TextView)mView.findViewById(R.id.text_points);
                 ImageView Gandalf = (ImageView)mView.findViewById(R.id.imageView5);
+                TextView QuizDoneTitle = (TextView)mView.findViewById(R.id.text_finishedtitle);
+
 
                 double trouble;
-                trouble = ((double)TotalPoints/maxQuestions)*100;
+                if (quizFlag==2){
+                    int maxQs2 = maxQuestions-45;
+                    trouble = ((double) TotalPoints / maxQs2) * 100;
+                } else {
+                    trouble = ((double) TotalPoints / maxQuestions) * 100;
+                }
                 DecimalFormat format = new DecimalFormat();
                 format.setDecimalSeparatorAlwaysShown(false);
                 DEfficiency.setText(format.format(trouble)+"%");
-                DPoints.setText("Total Points: "+TotalPoints+"/"+maxQuestions);
-
-                if (TotalPoints==maxQuestions){
-                    Gandalf.setImageResource(R.drawable.ic_gandalf);
+                if (quizFlag==2) {
+                    int maxQs2 = maxQuestions-40;
+                    DPoints.setText("Total Points: "+TotalPoints+"/"+maxQs2);
+                } else {
+                    DPoints.setText("Total Points: "+TotalPoints+"/"+maxQuestions);
                 }
+
+
+                if (trouble==100){
+                    Gandalf.setImageResource(R.drawable.ic_gandalf);
+                    QuizDoneTitle.setText("Your are now a true\nSOA WIZARD\n");
+                } else if (trouble<100&&trouble>=95) {
+                    Gandalf.setImageResource(R.drawable.ic_fifth);
+                    QuizDoneTitle.setText("Superb! ");
+                } else if (trouble<95&&trouble>=80) {
+                    Gandalf.setImageResource(R.drawable.ic_fourth);
+                    QuizDoneTitle.setText("WELL DONE!");
+                } else if (trouble<80&&trouble>=60) {
+                    Gandalf.setImageResource(R.drawable.ic_third);
+                    QuizDoneTitle.setText("We almost go the hang of it!");
+                } else if (trouble<60&&trouble>=40) {
+                    Gandalf.setImageResource(R.drawable.ic_second);
+                    QuizDoneTitle.setText("Getting There.. ");
+                } else if (trouble<40&&trouble>=20) {
+                    Gandalf.setImageResource(R.drawable.ic_first);
+                    QuizDoneTitle.setText("Well... It's something..");
+                } else {
+                    Gandalf.setImageResource(R.drawable.ic_zero);
+                    QuizDoneTitle.setText("Perhaps we should try getting at least\nsome of the answers right next time?");
+                }
+
 
                 great.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -326,7 +378,7 @@ public class StartQuizActivity extends AppCompatActivity {
             Answer.setText(AnswersQ[i]);
             for (int m=0;m<CorrectAnswers.length;m++){
                 if (i==Integer.valueOf(CorrectAnswers[m])) {
-                    Answer.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+                    Answer.setTextColor(getResources().getColor(R.color.colorDevoBlueDark));
                 }
             }
             return view;

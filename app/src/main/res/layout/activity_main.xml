@@ -99,7 +99,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/btn_statistics"
                 app:layout_constraintRight_toLeftOf="@+id/btn_statistics"
                 app:layout_constraintTop_toTopOf="@+id/btn_statistics"
-                app:srcCompat="@drawable/ic_bar_chart"
+                app:srcCompat="@drawable/ic_analytics2"
                 android:layout_marginEnd="8dp" />
 
         </android.support.constraint.ConstraintLayout>

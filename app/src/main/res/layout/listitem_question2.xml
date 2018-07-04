@@ -8,7 +8,7 @@
     android:checkMark="?android:attr/listChoiceIndicatorMultiple"
     android:gravity="center_vertical"
     android:paddingTop="10dp"
-    android:checkMarkTint="@color/colorDevoBlueDark"
+    android:checkMarkTint="@color/colorPrimary"
     android:textColor="@android:color/tab_indicator_text"
     android:paddingBottom="10dp"
     android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"

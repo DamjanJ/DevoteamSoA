@@ -1,227 +1,161 @@
 <resources>
     <string name="app_name">SoA Wizard</string>
     <string-array name="QuestionsBig">
-        <item>QUESTION: 1\nWhich two statements are true about composite applications and mediators?</item>
-        <item>QUESTION: 2\nWhat does the Oracle B2B component do for an end-to-end EDI transaction?</item>
-        <item>QUESTION: 3\nYou have developed a BPEL process with a Switch activity using the BPEL 1.1 specification. As part of the upgrade to SOA 12c, you are redesigning the BPEL process to use the BPEL 2.0 specification. Identify the right approach.</item>
-        <item>QUESTION: 4\nYou want to monitor a specific BPEL process variable in your process. You have all the capabilities of Oracle SOA Suite at your disposal. Which approach do you take if you want the variable data written to a JMS queue to be processed by another application?</item>
-        <item>QUESTION: 5\nA company wants to use Oracle SOA Suite to support a zero message loss system. Which three Oracle Adapters can the company use? </item>
-        <item>QUESTION: 6\nWhich statement is true about the relationship between the WSDL and the JCA binding file when working with an Oracle Adapter at design time?</item>
-        <item>QUESTION: 7\nWhich three design considerations apply to an IF-THEN rule?</item>
-        <item>QUESTION: 8\nYou expand a business rule component that a colleague added to the BPEL process. You see an Assign element named Facts_To_Rule_Service. Which statement is true about this Assign element?</item>
-        <item>QUESTION: 9\nIdentify four situations in which you can configure a notification for a human task.</item>
-        <item>QUESTION: 10\nWhich two statements are true about working with tasks in Business Process Workspace?</item>
-        <item>QUESTION: 11\nTo avoid the purchase of new server capacity, a company must limit the volume of messages routed to a computationally expensive RESTful service operation. Which Oracle SOA Suite component can help the company meet the requirement?</item>
-        <item>QUESTION: 12\nWhich three security schemes are supported by Oracle Service Bus (OSB)?</item>
-        <item>QUESTION: 13\nYou defined an event. You now want to trigger that event from an existing Mediator component. How do you link the event to the Mediator so that the Mediator can raise the event to the Event Delivery Network (EDN)?</item>
-        <item>QUESTION: 14\nWhich Oracle Event Processing (OEP) data cartridge should you use to track the GPS location of busses and generate alerts when a bus arrives at its predetermined bus stop positions?</item>
-        <item>QUESTION: 15\nWhich two business indicators should be created to support a chart titled "Sales Total by Region"?</item>
-        <item>QUESTION: 16\nWhich two statements are true about standard dashboards?</item>
-        <item>QUESTION: 17\nWhich statement correctly describes the role of an Oracle Web Services Manager agent?</item>
-        <item>QUESTION: 18\nWhen more than one policy is attached to a policy subject, the combination of policies needs to be valid.</item>
-        <item>QUESTION: 19\nAs an Oracle SOA Suite composite moves through the software development life cycle, certain environment-specific changes must be made to the composite configuration from deployment to deployment. Which feature can help you capture and effect these changes?</item>
-        <item>QUESTION: 20\nWhich statement accurately describes deploying your SOA application to a cluster?</item>
-        <item>QUESTION: 21\nTo support the deployment of a new provisioning system, a company wants to install and configure a production domain with Oracle SOA Suite and Oracle Service Bus. Which statement is true about the required effort?</item>
-        <item>QUESTION: 22\nAfter you install the OEP product, which action is required to install and configure an OEP domain?</item>
-        <item>QUESTION: 23\nWhich two statements are true about the defined Oracle JMS Adapter outbound connection?</item>
-        <item>QUESTION: 24\nFor each enrollment request message, a health insurance carriers web service always returns a response message acknowledgement the receipt of the enrollment request. If there are problems fulfilling the requested enrollment, the web service may respond at a later time with an additional response message detailing why the enrollment could not be fulfilled.\nWhich Oracle SOA Suite service component should be used to implement this integration pattern?</item>
-        <item>QUESTION: 25\nThe identity context is opaque to your web service client and web service and you dont need to perform any additional coding or processing in your client or service to support it after you enable identity context propagation.\nWhich Oracle SOA Suite component directly enables this behavior?</item>
-        <item>QUESTION: 26\nYou have modeled a composite with an inbound adapter service wired to a BPEL process component.
-Which method do you use to model a rejection handler for the inbound adapter service?
-</item>
-        <item>QUESTION: 27*\nWhich two statements are correct about the Oracle Enterprise Scheduler Service (ESS) facility?
-</item>
-        <item>QUESTION: 28\nWhat two architectural factors most heavily influence the interoperability of the Oracle Adapters with Oracle Service Bus (OSB) and Oracle SOA Suite?
-</item>
-        <item>QUESTION: 29\n
-Oracle SOA Suite is being used to virtualize service calls to a third-party human resources provider. The planned service payloads will require minimum transformation. Routing is simple because service calls will be mapped one-for-one to existing third-party services.
-Which two components should be used to handle this service virtualization?
-</item>
-        <item>QUESTION: 30\n
-Which two are available as conditions for an alert rule in BAM 12c?
-</item>
-        <item>QUESTION: 31\n
-Oracle Adapters are deployed to the Oracle SOA Suite server. Which three SOA Suite components can use Oracle Adapters?
-</item>
-        <item>QUESTION: 32\n
-In a BPEL model, what is the quickest way to implement a capability to skip rule execution if a particular condition holds?
-A. Model a switch activity to conditionally execute the business rule component.
-</item>
-        <item>QUESTION: 33\n
-Which tool would you use to enable more detailed logging of SOA components?
-</item>
-        <item>QUESTION: 34\n
-Which expiration and escalation setting can be used to route a task a specified number of levels up a management chain if the assignee does not respond in a given time period?
-</item>
-        <item>QUESTION: 35\n
-How are task outcomes processed in BPEL process?
-</item>
-        <item>QUESTION: 36\n
-You have modelled a Composite X for which the following fault policy action has been configured for remote faults:\n
-            \t&lt;Action id="ora-retry"&gt;\n
-      \t\t&lt;retry&gt;
-         &lt;retryCount>2&lt;/retryCount&gt;
-         &lt;retryIntrval>2&lt;/retryIntrval&gt;
-         &lt;exponentialBackoff/&gt;
-      &lt;/retry&gt;
-   &lt;/Action&gt;
-At runtime, when a remote fault occurs on at outbound invoke, this ora-retry action is triggered. After the two configured retries are exhausted, which one occurs?
-</item>
-        <item>Q37</item>
-        <item>Q38</item>
-        <item>QUESTION: 39\n
-You want to configure Oracle SOA Suite for Maximum Availability Architecture (MAA). Which two activities must be completed?
-</item>
-        <item>QUESTION: 40\n
-Identify two correct statements about Oracle Event Processing (OEP).
-</item>
-        <item>QUESTION: 41\n
-Which statement is true about the skip condition in a BPEL activity?
-</item>
-        <item>QUESTION: 42\n
-Which two statements are true about stake holders working with Business Process Workspace?
-</item>
-        <item>QUESTION: 43\n
-EPN is the internal structure of an OEP application and is displayed as a top-down hierarchy in a graphical editor.
-Which two statements are correct about the Event Processing Network (EPN) in Oracle Event Processing (OEP)?
-</item>
-        <item>QUESTION: 44\n
-When you create an assert in a test case, you can specify a Compare By rule of xml-identical or xml-similar. The rule designates the strictness of the comparison. If you choose xml-similar, identify two conditions that will cause the comparison to fall.
-</item>
-        <item>QUESTION: 45\n
-Your company has a check Credit service used in the sales process and your organization plans to roll out a new sales mobile application. Identify two approaches that you can use to develop the new mobile application.
-</item>
-        <item>QUESTION: 46\n
-Which two statements are correct about cluster support for Oracle SOA Suite 12c applications?
-</item>
-        <item>QUESTION: 47\n
-Which two are correct statements about the Oracle Cloud Adapter for Salesforce.com?
-</item>
-        <item>QUESTION: 48\n
-</item>
-        <item>QUESTION: 49\n
-Which two statements accurately describe policy attachment in Oracle Web Services Manager (OWSM)?
-</item>
-        <item>QUESTION: 50\n
-Identify three true statements about the use of composite sensors.
-</item>
-        <item>QUESTION: 51*\n
-Which statement accurately describes how to use SOA Suite to create a REST interface for a provider application that does not support REST?</item>
-        <item>QUESTION: 52\n
-Which two statements are true about Complex Event Processing (CEP)?
-</item>
-        <item>QUESTION: 53\n
-Which two statements are true about the role of a Continuous Query Language (CQL) processor in a Oracle Event Processing application?
-</item>
-        <item>QUESTION: 54\n
-Which statement is false about debugging SOA composites?
-</item>
-        <item>QUESTION: 55\n
-Which statement accurately describes event-driven architecture?
-</item>
-        <item>QUESTION: 56*\n
-Which statement is correct about how if-then rules are processed during an inferencing session?
-</item>
-        <item>QUESTION: 57\n
-Which dashboard should you use to gauge the overall efficiency of a user for a specific process?
-</item>
-        <item>QUESTION: 58\n
-Which challenge presented by heterogeneous IT architectures does the Oracle Service Bus transport abstraction comprehensively address?
-</item>
-        <item>QUESTION: 59*\n
-Which three are proper applications of Oracle Service Bus?
-</item>
-        <item>QUESTION: 60*\n
-Which statement is true about Oracle Service Bus support for service virtualization?
-</item>
-        <item>QUESTION: 61\n
-You are planning to upgrade a SOA suite production environment from 11g to 12c and are evaluating the required steps in the upgrade process. Identify the two statements that accurately describe that process.
-</item>
-        <item>QUESTION: 62\n
-You are about to upgrade an environment from SOA Suite 11g to SOA Suite 12c and you want to make sure that you meet the prerequisites for the upgrade process.
-Which two options are prerequisites?
-</item>
-        <item>QUESTION: 63\n
-Which statement is false about Oracle Business Activity Monitoring (Oracle BAM)?
-</item>
-        <item>QUESTION: 64*\n
-Which statement is true about if-then rule within a ruleset?
-</item>
-        <item>QUESTION: 65\n
-Identify two reasons why Oracle Cloud Adapters make it easier to integrate a SOA Suite application with a cloud-based application.
-</item>
-        <item>QUESTION: 66*\n
-Your company wants to extend a number of in-house applications with the third-party service functionality.
-Identify two ways in which this can be accomplished using Oracle SOA Suite.
-</item>
-        <item>QUESTION: 67*\n
-To support invocation of a SOAP web service from BPEL, you import the WSDL of the web service into your SOA project. The local WSDL copy contains no partner link types. You create a partner link for the web service in the BPEL designer.
-How does JDeveloper ensure the request partner link types are provided?
-</item>
-        <item>QUESTION: 68\n
-Which two statements accurately describe the invoking of a human task?
-</item>
-        <item>QUESTION: 69*\n
-For a particular asynchronous interaction, Oracle SOA Suite hosts two BPEL processes. One BPEL process acts as the client and the other acts as the service.
-Between the two BPEL processes, what is the smallest number of invoke activities that must be defined?
-</item>
-        <item>QUESTION: 70*\n
-You have a situation where a collection of rules might provide a flexible way of externalizing logic in an application.
-Which two are accurate considerations to assess when you decide to use a decision table or if- then rules?
-</item>
-        <item>QUESTION: 71\n
-Which two are features of Event Delivery Network (EDN)?
-</item>
-        <item>QUESTION: 72\n
-Which statement is true about how BPEL Process Manager handles the For Each activity?
-</item>
-        <item>QUESTION: 73\n
-For each three items can you create tests by using the Service Component Architecture (SCA) test framework?
-</item>
-        <item>QUESTION: 74\n
-BPEL processes are being used to implement both the service and client sides of a synchronous web service interaction.
-Which statement is true?
-</item>
-        <item>QUESTION: 75*\n
-Which two are objectives that you can achieve by using business rules to direct human workflow?
-</item>
-        <item>QUESTION: 76\n
-Which two are valid use cases for a business service?
-</item>
-        <item>QUESTION: 77\n
-Which two statements accurately describe how Oracle Web Services Manager works?
-</item>
-        <item>QUESTION: 78\n
-Identify two statements that correctly describe OWSM policy attachments in Oracle SOA Suite
-</item>
-        <item>QUESTION: 79\n
-Results catching has been configured on a business service. A previously cached result has been flushed from the cache.
-Which two events may have occurred?
-</item>
-        <item>Q80</item>
-        <item>QUESTION: 81\n
-After a successful web application login, an Oracle Access Manager (OAM) token is made available to Oracle WebLogic Server (WLS) where the token is asserted for authentication purposes. The resulting Java Authentication and Authorization Service (JAAS) subject is then made available to the Oracle Web Service Manager (OWSM) agent where it is used to create a Security Assertion Markup Language (SAML).
-Which security feature does this scenario illustrate?
-</item>
-        <item>QUESTION: 82*\nWhich three statements are true about the Oracle Enterprise Scheduler Service (ESS) facility?</item>
-        <item>QUESTION: 83\nYou pass some data from a process variable as a parameter into a human task. At a later time, the variable is then updated in a parallel stream of execution in the BPEL process while the human task is still executing before it is actioned by the assignee.
-What does the assignee see after opening the task in the workspace and looking at the parameter?</item>
-        <item>Q84</item>
-        <item>QUESTION: 85\nA company wishes to create a gateway proxy to provide WS-Security authentification for all inbound request. After successful implementation of that proxy, we have to route request to backend. How?</item>
-        <item>QUESTION: 86\nYou want to include documentation in the BPEL source code for business rule that you are adding to your BPEL model. How would you enter this documentation?</item>
-        <item>QUESTION: 87\nWhich technologies provide zero loss message system with EJB, JMS and DB Adapters?</item>
-        <item>QUESTION: 88\nYour solution needs to validate, transform, and route data. You want to deploy the capability as a Service Component Architecture(SCA) composite application. You would most likely use a ________ to provide the functionality.</item>
-        <item>QUESTION: 89\nIntegration Debugging is available for which two components?</item>
-        <item>DEVELOPMENT\nIF YOU SEE THIS CALL DAMJAN</item>
-        <item>DEVELOPMENT\nIF YOU SEE THIS CALL DAMJAN</item>
-        <item>DEVELOPMENT\nIF YOU SEE THIS CALL DAMJAN</item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item>QUESTION: 1\n\nWhich two statements are true about composite applications and mediators?</item>
+        <item>QUESTION: 2\n\nWhat does the Oracle B2B component do for an end-to-end EDI transaction?</item>
+        <item>QUESTION: 3\n\nYou have developed a BPEL process with a Switch activity using the BPEL 1.1 specification. As part of the upgrade to SOA 12c, you are redesigning the BPEL process to use the BPEL 2.0 specification. Identify the right approach.</item>
+        <item>QUESTION: 4\n\nYou want to monitor a specific BPEL process variable in your process. You have all the capabilities of Oracle SOA Suite at your disposal. Which approach do you take if you want the variable data written to a JMS queue to be processed by another application?</item>
+        <item>QUESTION: 5\n\nA company wants to use Oracle SOA Suite to support a zero message loss system. Which three Oracle Adapters can the company use? </item>
+        <item>QUESTION: 6\n\nWhich statement is true about the relationship between the WSDL and the JCA binding file when working with an Oracle Adapter at design time?</item>
+        <item>QUESTION: 7\n\nWhich three design considerations apply to an IF-THEN rule?</item>
+        <item>QUESTION: 8\n\nYou expand a business rule component that a colleague added to the BPEL process. You see an Assign element named Facts_To_Rule_Service. Which statement is true about this Assign element?</item>
+        <item>QUESTION: 9\n\nIdentify four situations in which you can configure a notification for a human task.</item>
+        <item>QUESTION: 10\n\nWhich two statements are true about working with tasks in Business Process Workspace?</item>
+        <item>QUESTION: 11\n\nTo avoid the purchase of new server capacity, a company must limit the volume of messages routed to a computationally expensive RESTful service operation. Which Oracle SOA Suite component can help the company meet the requirement?</item>
+        <item>QUESTION: 12\n\nWhich three security schemes are supported by Oracle Service Bus (OSB)?</item>
+        <item>QUESTION: 13\n\nYou defined an event. You now want to trigger that event from an existing Mediator component. How do you link the event to the Mediator so that the Mediator can raise the event to the Event Delivery Network (EDN)?</item>
+        <item>QUESTION: 14\n\nWhich Oracle Event Processing (OEP) data cartridge should you use to track the GPS location of busses and generate alerts when a bus arrives at its predetermined bus stop positions?</item>
+        <item>QUESTION: 15\n\nWhich two business indicators should be created to support a chart titled "Sales Total by Region"?</item>
+        <item>QUESTION: 16\n\nWhich two statements are true about standard dashboards?</item>
+        <item>QUESTION: 17\n\nWhich statement correctly describes the role of an Oracle Web Services Manager agent?</item>
+        <item>QUESTION: 18\n\nWhen more than one policy is attached to a policy subject, the combination of policies needs to be valid.</item>
+        <item>QUESTION: 19\n\nAs an Oracle SOA Suite composite moves through the software development life cycle, certain environment-specific changes must be made to the composite configuration from deployment to deployment. Which feature can help you capture and effect these changes?</item>
+        <item>QUESTION: 20\n\nWhich statement accurately describes deploying your SOA application to a cluster?</item>
+        <item>QUESTION: 21\n\nTo support the deployment of a new provisioning system, a company wants to install and configure a production domain with Oracle SOA Suite and Oracle Service Bus. Which statement is true about the required effort?</item>
+        <item>QUESTION: 22\n\nAfter you install the OEP product, which action is required to install and configure an OEP domain?</item>
+        <item>QUESTION: 23\n\nWhich two statements are true about the defined Oracle JMS Adapter outbound connection?</item>
+        <item>QUESTION: 24\n\nFor each enrollment request message, a health insurance carriers web service always returns a response message acknowledgement the receipt of the enrollment request. If there are problems fulfilling the requested enrollment, the web service may respond at a later time with an additional response message detailing why the enrollment could not be fulfilled.\nWhich Oracle SOA Suite service component should be used to implement this integration pattern?</item>
+        <item>QUESTION: 25\n\nThe identity context is opaque to your web service client and web service and you dont need to perform any additional coding or processing in your client or service to support it after you enable identity context propagation.\nWhich Oracle SOA Suite component directly enables this behavior?</item>
+        <item>QUESTION: 26\n\nYou have modeled a composite with an inbound adapter service wired to a BPEL process component.\nWhich method do you use to model a rejection handler for the inbound adapter service?</item>
+        <item>QUESTION: 27*\n\nWhich two statements are correct about the Oracle Enterprise Scheduler Service (ESS) facility?</item>
+        <item>QUESTION: 28\n\nWhat two architectural factors most heavily influence the interoperability of the Oracle Adapters with Oracle Service Bus (OSB) and Oracle SOA Suite?</item>
+        <item>QUESTION: 29\n\nOracle SOA Suite is being used to virtualize service calls to a third-party human resources provider. The planned service payloads will require minimum transformation. Routing is simple because service calls will be mapped one-for-one to existing third-party services.\nWhich two components should be used to handle this service virtualization?</item>
+        <item>QUESTION: 30\n\nWhich two are available as conditions for an alert rule in BAM 12c?</item>
+        <item>QUESTION: 31\n\nOracle Adapters are deployed to the Oracle SOA Suite server. Which three SOA Suite components can use Oracle Adapters?</item>
+        <item>QUESTION: 32\n\nIn a BPEL model, what is the quickest way to implement a capability to skip rule execution if a particular condition holds?</item>
+        <item>QUESTION: 33\n\nWhich tool would you use to enable more detailed logging of SOA components?</item>
+        <item>QUESTION: 34\n\nWhich expiration and escalation setting can be used to route a task a specified number of levels up a management chain if the assignee does not respond in a given time period?</item>
+        <item>QUESTION: 35\n\nHow are task outcomes processed in BPEL process?</item>
+        <item>QUESTION: 36\n\nYou have modelled a Composite X for which the following fault policy action has been configured for remote faults:\n
+		\t&lt;Action id="ora-retry"&gt;\n
+		\t\t&lt;retry&gt;\n
+		\t\t\t&lt;retryCount>2&lt;/retryCount&gt;\n
+		\t\t\t&lt;retryIntrval>2&lt;/retryIntrval&gt;\n
+		\t\t\t&lt;exponentialBackoff/&gt;\n
+		\t\t&lt;/retry&gt;\n
+		\t&lt;/Action&gt;\n\nAt runtime, when a remote fault occurs on at outbound invoke, this ora-retry action is triggered. After the two configured retries are exhausted, which one occurs?</item>
+        <item>QUESTION: 37\nGiven the following Oracle File Adapter configuration:\n
+		&lt;adapterpa necu-config name=&#34;ReadPlanBenefit&#34; adapter=&#34;File Adapter&#34; wsdlLocation=&#34;ReadPlanBenefit.wsdl&#34; xmlns=http://platform.integration.oracle/blocks/adapter/fw/metadata&gt;\n
+		\t&lt;connection-factory location=&#34;eis/FileAdapter&#34;/&gt;\n
+		\t&lt;endpoint-interaction portType=&#34;SynchRead_ptt&#34; operation=&#34; SynchRead&#34;&gt;\n
+		\t\t&lt;interaction-spec className=&#34;oracle.tip.adapter.file.outbound.FileReadInteraction.Spec&#34;&gt;\n
+		\t\t\t&lt;property name=&#34;DeleteFile&#34; value=&#34;false&#34;/&gt;\n
+		\t\t\t&lt;property name=&#34;PhysicalDirectory&#34; value=&#34;/home/plan_benefit&#34;/&gt;\n
+		\t\t\t&lt;property name=&#34;FileName&#34; value=&#34; plan_benefit.xml&#34;/&gt;\n
+		\t\t\t&lt;property name=&#34;PhysicalArchiveDirectory&#34; value=&#34;/home/plan_benefit/archive/&gt;
+		\t\t&lt;/interaction-spec&gt;
+		\t&lt;/endpoint-interaction&gt;
+		&lt;/adapter-config&gt;
+		</item>
+        <item>QUESTION: 38\n\nComposite X invokes an outbound DB adapter to write data to a database table. You have configured JCA retry at the binding component as follows:\n
+		&lt;property name = &#34;jca.retry.count&#34; type=&#34;xs:int&#34; many=&#34;false&#34; override =&#34;may&#34;&gt;2&lt;/property&gt;\n
+		&lt;property name = &#34;jca.retry.interval&#34; type=&#34;xs:int&#34; many=&#34;false&#34; override =&#34;may&#34;&gt;2&lt;/property&gt;\n
+		You have also modelled a fault policy to retry the invocation three times in case of remoteFault as follows:\n
+		&lt;retryInterval&gt;3&lt;retryInterval&gt;\n
+		</item>
+        <item>QUESTION: 39\n\nYou want to configure Oracle SOA Suite for Maximum Availability Architecture (MAA). Which two activities must be completed?</item>
+        <item>QUESTION: 40\n\nIdentify two correct statements about Oracle Event Processing (OEP).</item>
+        <item>QUESTION: 41\n\nWhich statement is true about the skip condition in a BPEL activity?</item>
+        <item>QUESTION: 42\n\nWhich two statements are true about stake holders working with Business Process Workspace?</item>
+        <item>QUESTION: 43\n\nEPN is the internal structure of an OEP application and is displayed as a top-down hierarchy in a graphical editor.\nWhich two statements are correct about the Event Processing Network (EPN) in Oracle Event Processing (OEP)?</item>
+        <item>QUESTION: 44\n\nWhen you create an assert in a test case, you can specify a Compare By rule of xml-identical or xml-similar. The rule designates the strictness of the comparison.\nIf you choose xml-similar, identify two conditions that will cause the comparison to fall.</item>
+        <item>QUESTION: 45\n\nYour company has a check Credit service used in the sales process and your organization plans to roll out a new sales mobile application.\nIdentify two approaches that you can use to develop the new mobile application.</item>
+        <item>QUESTION: 46\n\nWhich two statements are correct about cluster support for Oracle SOA Suite 12c applications?</item>
+        <item>QUESTION: 47\n\nWhich two are correct statements about the Oracle Cloud Adapter for Salesforce.com?</item>
+        <item>QUESTION: 48\n\nA user has configured Mediator M1 to receive and route product information from system X into its internal applications in chronological order. For each product, M1 receives one &#34;create&#34; event followed by any number of &#34;update&#34; events from AQ Queue via a JMS adapter.
+        M1 can receive updates to the product at any time of day. The user claims that incoming messages for each product are received and processed in the correct chronological order 95 percent of the time. However, the messages are being processed ot of order 5 percent of the time.
+		This results in critical errors in the targeted systems. The user expects all messages pertaining to a product to be unconditionally processed in the order of arrival at M1. What causes this discrepancy?</item>
+        <item>QUESTION: 49\n\nWhich two statements accurately describe policy attachment in Oracle Web Services Manager (OWSM)?</item>
+        <item>QUESTION: 50\n\nIdentify three true statements about the use of composite sensors.</item>
+        <item>QUESTION: 51*\n\nWhich statement accurately describes how to use SOA Suite to create a REST interface for a provider application that does not support REST?</item>
+        <item>QUESTION: 52\n\nWhich two statements are true about Complex Event Processing (CEP)?</item>
+        <item>QUESTION: 53\n\nWhich two statements are true about the role of a Continuous Query Language (CQL) processor in a Oracle Event Processing application?</item>
+        <item>QUESTION: 54\n\nWhich statement is false about debugging SOA composites?</item>
+        <item>QUESTION: 55\n\nWhich statement accurately describes event-driven architecture?</item>
+        <item>QUESTION: 56*\n\nWhich statement is correct about how if-then rules are processed during an inferencing session?</item>
+        <item>QUESTION: 57\n\nWhich dashboard should you use to gauge the overall efficiency of a user for a specific process?</item>
+        <item>QUESTION: 58\n\nWhich challenge presented by heterogeneous IT architectures does the Oracle Service Bus transport abstraction comprehensively address?</item>
+        <item>QUESTION: 59*\n\nWhich three are proper applications of Oracle Service Bus?</item>
+        <item>QUESTION: 60*\n\nWhich statement is true about Oracle Service Bus support for service virtualization?</item>
+        <item>QUESTION: 61\n\nYou are planning to upgrade a SOA suite production environment from 11g to 12c and are evaluating the required steps in the upgrade process.\nIdentify the two statements that accurately describe that process.</item>
+        <item>QUESTION: 62\n\nYou are about to upgrade an environment from SOA Suite 11g to SOA Suite 12c and you want to make sure that you meet the prerequisites for the upgrade process.\nWhich two options are prerequisites?</item>
+        <item>QUESTION: 63\n\nWhich statement is false about Oracle Business Activity Monitoring (Oracle BAM)?</item>
+        <item>QUESTION: 64*\n\nWhich statement is true about if-then rule within a ruleset?</item>
+        <item>QUESTION: 65\n\nIdentify two reasons why Oracle Cloud Adapters make it easier to integrate a SOA Suite application with a cloud-based application.</item>
+        <item>QUESTION: 66*\n\nYour company wants to extend a number of in-house applications with the third-party service functionality.\nIdentify two ways in which this can be accomplished using Oracle SOA Suite.</item>
+        <item>QUESTION: 67*\n\nTo support invocation of a SOAP web service from BPEL, you import the WSDL of the web service into your SOA project. The local WSDL copy contains no partner link types. You create a partner link for the web service in the BPEL designer.\nHow does JDeveloper ensure the request partner link types are provided?</item>
+        <item>QUESTION: 68\n\nWhich two statements accurately describe the invoking of a human task?</item>
+        <item>QUESTION: 69*\n\nFor a particular asynchronous interaction, Oracle SOA Suite hosts two BPEL processes. One BPEL process acts as the client and the other acts as the service.\nBetween the two BPEL processes, what is the smallest number of invoke activities that must be defined?</item>
+        <item>QUESTION: 70*\n\nYou have a situation where a collection of rules might provide a flexible way of externalizing logic in an application.\nWhich two are accurate considerations to assess when you decide to use a decision table or if- then rules?</item>
+        <item>QUESTION: 71\n\nWhich two are features of Event Delivery Network (EDN)?</item>
+        <item>QUESTION: 72\n\nWhich statement is true about how BPEL Process Manager handles the For Each activity?</item>
+        <item>QUESTION: 73\n\nFor each three items can you create tests by using the Service Component Architecture (SCA) testframework?</item>
+        <item>QUESTION: 74\n\nBPEL processes are being used to implement both the service and client sides of a synchronous web service interaction.\nWhich statement is true?</item>
+        <item>QUESTION: 75*\n\nWhich two are objectives that you can achieve by using business rules to direct human workflow?</item>
+        <item>QUESTION: 76\n\nWhich two are valid use cases for a business service?</item>
+        <item>QUESTION: 77\n\nWhich two statements accurately describe how Oracle Web Services Manager works?</item>
+        <item>QUESTION: 78\n\nIdentify two statements that correctly describe OWSM policy attachments in Oracle SOA Suite</item>
+        <item>QUESTION: 79\n\nResults catching has been configured on a business service. A previously cached result has been flushed from the cache.\nWhich two events may have occurred?</item>
+        <item>QUESTION: 80\n\nGiven the following XML document, which two XPath expressions return the same result?
+		&lt;?xml version =&#34;1.0&#34; encoding =&#34;UTF - 8&#34;?&gt;\n
+		\t&lt;bookstore&gt;\n
+		\t\t&lt;book category=&#34;COOKING&#34;&gt;\n
+		\t\t\t&lt;title lang=&#34;en&#34;&gt;Everyday Italian Treats&lt;/title&gt;\n
+		\t\t\t&lt;author&gt;George Smith&lt;/author&gt;\n
+		\t\t\t&lt;year&gt;2009&lt;/year&gt;\n
+		\t\t\t&lt;price&gt;30.00&lt;/price&gt;\n
+		\t\t&lt;/book&gt;\n
+		\t\t&lt;book category=&#34;WEB&#34;&gt;\n
+		\t\t\t&lt;title lang=&#34;en&#34;&gt;Getting Started with XPath&lt;/title&gt;\n
+		\t\t\t&lt;author&gt;Tammy Lee&lt;/author&gt;\n
+		\t\t\t&lt;author&gt;SergieLadloff&lt;/author&gt;\n
+		\t\t\t&lt;year&gt;2011&lt;/year&gt;\n
+		\t\t\t&lt;price&gt;49.99&lt;/price&gt;\n
+		\t\t&lt;/book&gt;\n
+		\t&lt;/bookstore&gt;
+		</item>
+        <item>QUESTION: 81\n\nAfter a successful web application login, an Oracle Access Manager (OAM) token is made available to Oracle WebLogic Server (WLS) where the token is asserted for authentication purposes. The resulting Java Authentication and Authorization Service (JAAS) subject is then made available to the Oracle Web Service Manager (OWSM) agent where it is used to create a Security Assertion Markup Language (SAML).\nWhich security feature does this scenario illustrate?</item>
+        <item>QUESTION: 82*\n\nWhich three statements are true about the Oracle Enterprise Scheduler Service (ESS) facility?</item>
+        <item>QUESTION: 83\n\nYou pass some data from a process variable as a parameter into a human task. At a later time, the variable is then updated in a parallel stream of execution in the BPEL process while the human task is still executing before it is actioned by the assignee.\nWhat does the assignee see after opening the task in the workspace and looking at the parameter?</item>
+        <item>QUESTION: 84\n\nConsider the current values of BPEL variables InputVariable and OutputVariable:\n\n
+		\tInputVariable\n
+		\t&lt;ns2:query_input&gt;\n
+		\t&lt;ns2:Row_id&gt;808&lt;/ns2:Row_id&gt;\n
+		\t&lt;/ns2:query_input&gt;\n\n
+        \tOutputVariable\n
+        \t&lt;ns3:query_output&gt;\n
+        \t&lt;ns3:Agent/&gt;\n
+        \t&lt;/ns3:query_output&gt;\n\n
+		Then consider the following BPEL activity Assign1:\n\n
+		\t&lt;assign name=&#34;Assign1&#34;&gt;	&lt;!- - Line 1- -&gt;\n
+		\t\t&lt;copy&gt;	&lt;!- - Line 2 - -&gt;\n
+		\t\t\t&lt;from variable =&#34;InputVariable&#34;	&lt;!- - Line 3 - -&gt;\n
+		\t\t\t\tpart = &#34;query_Input&#34;	&lt;!- - Line 4 - -&gt;\n
+		\t\t\t\tquery=&#34;/ns2: query_Input/ns2:Row_Id&#34;/&gt;	&lt;!- - Line 5 - -&gt;\n
+		\t\t\t&lt;to variable =&#34;OutputVariable&#34;	&lt;!- - Line 6 - -&gt;\n
+		\t\t\t\tpart = &#34;query_Output&#34;	&lt;!- - Line 7 - -&gt;\n
+		\t\t\t\tquery=&#34;/ns2: query_Outnput/ns2:RowId&#34;/&gt;	&lt;!- - Line 8 - -&gt;\n
+		\t\t&lt;/copy&gt;	&lt;!- - Line 9 - -&gt;\n
+		\t&lt;/assign&gt;	&lt;!- - Line 10 - -&gt;\n
+		</item>
+        <item>QUESTION: 85\n\nA company wishes to create a gateway proxy to provide WS-Security authentification for all inbound request. After successful implementation of that proxy, we have to route request to backend. How?</item>
+        <item>QUESTION: 86\n\nYou want to include documentation in the BPEL source code for business rule that you are adding to your BPEL model. How would you enter this documentation?</item>
+        <item>QUESTION: 87\n\nWhich technologies provide zero loss message system with EJB, JMS and DB Adapters?</item>
+        <item>QUESTION: 88\n\nYour solution needs to validate, transform, and route data. You want to deploy the capability as a Service Component Architecture(SCA) composite application. You would most likely use a ________ to provide the functionality.</item>
+        <item>QUESTION: 89\n\nIntegration Debugging is available for which two components?</item>
+        <item>DEVELOPMENT\n\nIF YOU SEE THIS CALL DAMJAN</item>
+        <item>DEVELOPMENT\n\nIF YOU SEE THIS CALL DAMJAN</item>
+        <item>DEVELOPMENT\n\nIF YOU SEE THIS CALL DAMJAN</item>
     </string-array>
 
 
