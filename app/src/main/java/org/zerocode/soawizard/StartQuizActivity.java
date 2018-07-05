@@ -109,7 +109,7 @@ public class StartQuizActivity extends AppCompatActivity {
         });
 
 
-        AnswersQ = AnswersBigStr[mycounter].split(":");
+        AnswersQ = AnswersBigStr[mycounter].split(";");
         CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
 
 
@@ -161,7 +161,7 @@ public class StartQuizActivity extends AppCompatActivity {
                     QuestionList.setSelected(true);
                     mycounter = mycounter + 1;
                     title.setText(QuestionsBigStr[mycounter]);
-                    AnswersQ = AnswersBigStr[mycounter].split(":");
+                    AnswersQ = AnswersBigStr[mycounter].split(";");
                     CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
 
 
@@ -205,7 +205,7 @@ public class StartQuizActivity extends AppCompatActivity {
                 format.setDecimalSeparatorAlwaysShown(false);
                 DEfficiency.setText(format.format(trouble)+"%");
                 if (quizFlag==2) {
-                    int maxQs2 = maxQuestions-40;
+                    int maxQs2 = maxQuestions-45;
                     DPoints.setText("Total Points: "+TotalPoints+"/"+maxQs2);
                 } else {
                     DPoints.setText("Total Points: "+TotalPoints+"/"+maxQuestions);
@@ -215,6 +215,7 @@ public class StartQuizActivity extends AppCompatActivity {
                 if (trouble==100){
                     Gandalf.setImageResource(R.drawable.ic_gandalf);
                     QuizDoneTitle.setText("Your are now a true\nSOA WIZARD\n");
+                    great.setText("*Laughs in Wizardish*");
                 } else if (trouble<100&&trouble>=95) {
                     Gandalf.setImageResource(R.drawable.ic_fifth);
                     QuizDoneTitle.setText("Superb! ");
@@ -224,15 +225,19 @@ public class StartQuizActivity extends AppCompatActivity {
                 } else if (trouble<80&&trouble>=60) {
                     Gandalf.setImageResource(R.drawable.ic_third);
                     QuizDoneTitle.setText("We almost go the hang of it!");
+                    great.setText("OK");
                 } else if (trouble<60&&trouble>=40) {
                     Gandalf.setImageResource(R.drawable.ic_second);
                     QuizDoneTitle.setText("Getting There.. ");
+                    great.setText("OK");
                 } else if (trouble<40&&trouble>=20) {
                     Gandalf.setImageResource(R.drawable.ic_first);
                     QuizDoneTitle.setText("Well... It's something..");
+                    great.setText("OK");
                 } else {
                     Gandalf.setImageResource(R.drawable.ic_zero);
                     QuizDoneTitle.setText("Perhaps we should try getting at least\nsome of the answers right next time?");
+                    great.setText("No ragrets!");
                 }
 
 
@@ -293,14 +298,14 @@ public class StartQuizActivity extends AppCompatActivity {
                     btn_showQ.setVisibility(View.INVISIBLE);
                     QuestionList.setSelected(true);
                     title.setText(QuestionsBigStr[mycounter]);
-                    AnswersQ = AnswersBigStr[mycounter].split(":");
+                    AnswersQ = AnswersBigStr[mycounter].split(";");
                     CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
                     StartQuizActivity.CorrectAnswerAdapter CA = new StartQuizActivity.CorrectAnswerAdapter();
                     QuestionList.setAdapter(CA);
                 }
                 else {
                     title.setText(QuestionsBigStr[mycounter]);
-                    AnswersQ = AnswersBigStr[mycounter].split(":");
+                    AnswersQ = AnswersBigStr[mycounter].split(";");
                     CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
                     StartQuizActivity.CorrectAnswerAdapter CA = new StartQuizActivity.CorrectAnswerAdapter();
                     QuestionList.setAdapter(CA);

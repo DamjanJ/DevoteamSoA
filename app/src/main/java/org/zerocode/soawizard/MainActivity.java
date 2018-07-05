@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
 
             public void onClick(View v) {
-                // TODO Auto-generated method stub
+                // TODO Auto-generated method stub 
 
 
                 // Damjan Tutorial: If button is visible, it will disappear on click, and vice versa
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view) {
                         Intent StartQuizInt = new Intent(getApplicationContext(),StartQuizActivity.class);
-                        // Adding params to see which Quiz to invoke 
+                        // Adding params to see which Quiz to invoke
                         Bundle b = new Bundle();
                         b.putInt("key", 1); //Your id
                         StartQuizInt.putExtras(b);

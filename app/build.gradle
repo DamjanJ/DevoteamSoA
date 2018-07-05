@@ -7,7 +7,7 @@ android {
         applicationId "org.zerocode.soawizard"
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 4
+        versionCode 5
         versionName "1.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

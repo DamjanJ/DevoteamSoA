@@ -59,6 +59,12 @@ public class QuestionsActivity extends AppCompatActivity{
         progress = (ProgressBar)findViewById(R.id.pb_questions);
         progress.setMax(maxQuestions-1);
 
+
+
+        AnswersQ = AnswersBigStr[mycounter].split(";");
+        CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
+
+
         btn_previousQ.setVisibility(View.INVISIBLE);
 
 
@@ -86,7 +92,7 @@ public class QuestionsActivity extends AppCompatActivity{
                                             btn_previousQ.setVisibility(View.VISIBLE);
                                         }
                                         title.setText(QuestionsBigStr[mycounter]);
-                                        AnswersQ = AnswersBigStr[mycounter].split(":");
+                                        AnswersQ = AnswersBigStr[mycounter].split(";");
                                         CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
                                         QuestionsAdapter QA = new QuestionsAdapter();
                                         QuestionList.setAdapter(QA);
@@ -114,9 +120,6 @@ public class QuestionsActivity extends AppCompatActivity{
         });
 
 
-        AnswersQ = AnswersBigStr[mycounter].split(":");
-        CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
-
 
 
 
@@ -135,7 +138,7 @@ public class QuestionsActivity extends AppCompatActivity{
                             btn_previousQ.setVisibility(View.VISIBLE);
                         }
                     title.setText(QuestionsBigStr[mycounter]);
-                    AnswersQ = AnswersBigStr[mycounter].split(":");
+                    AnswersQ = AnswersBigStr[mycounter].split(";");
                     CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
                     QuestionsAdapter QA = new QuestionsAdapter();
                     QuestionList.setAdapter(QA);
@@ -157,7 +160,7 @@ public class QuestionsActivity extends AppCompatActivity{
                             btn_previousQ.setVisibility(View.INVISIBLE);
                         }
                     title.setText(QuestionsBigStr[mycounter]);
-                    AnswersQ = AnswersBigStr[mycounter].split(":");
+                    AnswersQ = AnswersBigStr[mycounter].split(";");
                     CorrectAnswers = CorrectAnswersBigStr[mycounter].split(",");
                     QuestionsAdapter QA = new QuestionsAdapter();
                     QuestionList.setAdapter(QA);
